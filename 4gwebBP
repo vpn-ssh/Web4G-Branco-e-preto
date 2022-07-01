@@ -60,14 +60,14 @@ echo ""
 echo -e "\033[1;33mAGUARDE..."
 echo ""    
 cd /var/www/html
-wget https://www.dropbox.com/s/h72yokb08h475qc/internet4g.zip > /dev/null 2>&1
-unzip internet4g.zip > /dev/null 2>&1
+wget https://www.dropbox.com/s/b719n7ugpdp272i/internet4GBP.zip > /dev/null 2>&1
+unzip internet4GBP.zip > /dev/null 2>&1
 chmod 0777 img
 cd img
 chmod 0777 icone perfil icons
 cd /var/www/html
 rm -r index.html > /dev/null 2>&1
-rm -r internet4g.zip > /dev/null 2>&1
+rm -r internet4GBP.zip > /dev/null 2>&1
 cd 
 service apache2 restart
 mysql -h localhost -u root -p -e "CREATE DATABASE net"
@@ -81,10 +81,10 @@ echo "Altere no codigo abaixo SUASENHAAQUI e coloque a senha que utilizou durant
 sleep 5
 nano /var/www/html/conexao.php
 clear
-wget  https://github.com/NT-GIT-HUB/PAINEL-4G/raw/main/net.sql
+wget  https://www.dropbox.com/s/oj97ewguww29j9d/net.sql
 echo "Digite a senha do PhpMyAdmin"
 mysql -h localhost -u root -p net < net.sql
 rm net.sql
 service apache2 restart
 clear
-echo "CONCLUIDO"
+echo "CONCLUIDO Couty SSH Gostoso"
